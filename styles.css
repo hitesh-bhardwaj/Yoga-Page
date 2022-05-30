@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #fff;
+    color: black;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    margin: 0%;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul li {
+      list-style: none;
+  }
+
+  h1 {
+        line-height: 1.5;
+        letter-spacing: 1px;
+  }
+
+  p {
+      color: #404040;
+    font-size: 1.2rem;
+  }
+
+  /* navbar */
+  .main-nav{
+    margin: 3% 10%;
+  }
+
+  .nav1 > ul {
+    display: flex;
+  }
+  
+
+  .nav-btn {
+    display: none;
+  }
+  
+  .main-nav ul li {
+      font-size: 1.2rem;
+      padding-right: 6%;
+  }
+
+  .main-nav ul li a:hover {
+    color: grey;
+    transition: 0.2s;
+  }
+  .main-nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:767px) {
+  .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 4%;
+  
+    }
+  
+  .nav-btn label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+  
+      }
+  
+  .main-nav > .nav-btn label:hover, .main-nav  #nav-check:checked ~ .nav-btn > label {
+          background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+          .main-nav > .nav-btn > label > span {
+              display: block;
+              width: 25px;
+              height: 7px;
+              border-top: 2px solid #eee;
+            }
+            .main-nav > .nav1 ul {
+              position: absolute;
+              display: block;
+              width: 100%;
+              background-color: black;
+              height: 0;
+              transition: all 0.3s ease-in;
+              overflow-y: hidden;
+              top: 50px;
+              left: 0;
+              z-index: 1;
+              padding: 0;
+              margin-top: 5%;
+            }
+            .main-nav > .nav1 > ul > li {
+              text-align: center;
+              display: block;
+              width: 100%;
+              padding: 10px 0;
+            }
+            .main-nav > #nav-check:not(:checked) ~ .nav1 ul {
+              height: 0;
+  
+            }
+  
+            .main-nav > #nav-check:checked ~ .nav1 ul {
+  
+            height:40%;
+            width:100%;
+            overflow-y: auto;
+            padding: 0;
+          }
+  
+            .nav1 ul li a{
+              font-size: 20px;
+            }
+  
+            .main-nav{
+              margin: 2%;
+            }
+
+          }
+
+    
+    /* hero-section */
+
+        .hero{
+            font-size: 2rem;
+            width: 100%;
+            margin: 0%;
+            color: black;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            background-image: url(Images/herobg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .hero-main{
+            width: 41%;
+            padding: 7% 12%;
+        }
+
+        .h-title{
+            margin-bottom: -5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .h-title span{
+            padding-right: 3%;
+        }
+
+         span{
+            color: #114486;
+        }
+
+        button {
+            background-image: linear-gradient(to right, #4b6cb7 0% , #114486  100%);
+            color: white;
+            border: none;
+            font-size: 1.3rem;
+            margin-top: 8%;
+            padding: 3% 10%;
+            border-radius: 45px;
+            cursor: pointer;
+            border-style: solid;
+          }
+          
+          button:hover {
+            background-image: linear-gradient(to left, #4b6cb7 0% , #114486  100%);
+            color: #fff;
+            transition: 0.5s;
+          }
+
+
+          /* Practice-Yoga */
+          .prac-main{
+            clear: both;
+            position: relative;
+            height: 100%;
+            margin: 60% 10% 10% 10%;
+            text-align: center;
+          }
+
+          .prac-content1{
+            padding: 0% 15% 5%;
+          }
+
+          .prac-content2{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+          }
+
+          .prac-content2 div{
+              background-color: #f7f7f7;
+              border-radius: 45px;
+              padding: 4% 3%; 
+              margin: 1%;
+          }
+
+          /* About-Section */
+          
+          .about{
+              padding: 5%;
+          }
+
+          .about-main{
+            display: flex;
+            align-items: center;
+          }
+
+          .about-main1{
+            margin: 0 5%;
+          }
+
+          .about-main2{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+          }
+          .about-main2 div{
+            width: 30%;
+          }
+
+          /* Practice-Section1 */
+          .practice{
+              height: 100vh;
+          }
+         
