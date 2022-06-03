@@ -3,6 +3,7 @@ html {
   }
   
   body {
+    position: relative;
     background-color: #fff;
     color: black;
     font-family: 'Poppins';
@@ -29,7 +30,18 @@ html {
     font-size: 1.2rem;
   }
 
+  @media  screen and (max-width:767px) {
+    .body{
+      
+    }
+  }
+
   /* navbar */
+  header{
+    position: absolute;
+    width: 100%;
+  }
+
   .main-nav{
     margin: 3% 10%;
   }
@@ -48,15 +60,20 @@ html {
       padding-right: 6%;
   }
 
+  .main-nav ul li a{
+    color: #000;
+  }
+
   .main-nav ul li a:hover {
     color: grey;
     transition: 0.2s;
   }
+
   .main-nav > #nav-check {
     display: none;
   }
   
-  @media (max-width:767px) {
+  @media (max-width:768px) {
   .nav-btn {
       display: inline-block;
       position: absolute;
@@ -135,8 +152,7 @@ html {
             margin: 0%;
             color: black;
             height: 100vh;
-            position: absolute;
-            top: 0px;
+            top: 0;
             background-image: url(Images/herobg.png);
             background-size: cover;
             background-repeat: no-repeat;
@@ -170,7 +186,7 @@ html {
             padding: 3% 10%;
             border-radius: 45px;
             cursor: pointer;
-            border-style: solid;
+            
           }
           
           button:hover {
@@ -179,13 +195,17 @@ html {
             transition: 0.5s;
           }
 
+          @media (max-width:768px) {
+            .hero{
+              background-size: contain;
+            }
+          }
+
 
           /* Practice-Yoga */
           .prac-main{
-            clear: both;
-            position: relative;
             height: 100%;
-            margin: 60% 10% 10% 10%;
+            margin: 10%;
             text-align: center;
           }
 
@@ -230,8 +250,176 @@ html {
             width: 30%;
           }
 
-          /* Practice-Section1 */
-          .practice{
-              height: 100vh;
+          .about-main2 h1 {
+            color: #114486;
+          }
+
+          @media (max-width:768px) {
+            .about-main{
+              display : block;
+            }
           }
          
+          /* Teachers-Section */
+
+         .teachers{
+            height: 100%;
+            margin: 10%;
+            text-align: center;
+          }
+
+          .teachers-intro{
+            padding: 0% 15% 5%;
+          }
+
+          .intro-main{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+          }
+
+          .intro-main > div{
+            width: 100%;
+            padding: 4% 2%; 
+          }
+
+          .intro-main > div > img{
+            width: 100%;
+          }
+
+
+          /* Gallery Section */
+          .gal{
+            margin: 10% 10%;
+            text-align: center;
+          }
+
+          .gal-img-r1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          .gal-img > div > span {
+            padding: .5% 1%;
+
+          }
+          
+
+          .img-s{
+            height: 380px;
+            width: 280px;
+            object-fit: cover;
+            border-radius: 40px;
+            margin: 0% 1%;
+          }
+
+          .img-l{
+            height: 380px;
+            width: 570px;
+            object-fit: cover;
+            border-radius: 40px;
+            
+          }
+
+          
+          /* Signup-Section */
+
+          .signup{
+            
+            padding: 10%;
+          }
+
+          .signup-main {
+            color: white;
+            background-color: #ffffff0e;
+            border-radius: 30px;
+            width: 35%;
+            padding: 6%;
+          }
+
+          .signup-main > p{
+            color: #fff;
+          }
+
+          input{
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            color: white;
+          }
+
+          input:focus-visible {
+            outline: none;
+        }
+
+        .check-box{
+          font-size: small;;
+          display: flex;
+          
+        }
+
+        .check-box > input{
+          width: auto;
+          margin-right: 10px;
+        }
+
+        
+          /* Footer Section */
+          footer {
+            
+            padding: 10% 10% 2%;
+          }
+
+          .footer-main > div > h4{
+            color: #114486;
+          }
+
+          .footer-main p{
+            color: #fff;
+          }
+
+          .footer-main {
+            display: flex;
+            
+          }
+
+          .footer-main > div{
+            padding: 4%;
+          }
+
+          .footer-bot{
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            border-top: darkgray;
+            border-width: 2px;
+            border-style: solid;
+          }
+
+          .footer-bot > p{
+            color: darkgrey;
+            font-size: medium;
+          }
+          
+
+          @media (max-width:768px) {
+            .footer-main{
+              display : flex;
+              flex-wrap: wrap;
+            }
+
+            .footer-main > div{
+              width: 40%;
+            }
+          }
+
+          .backdrop{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            z-index: -1;
+          }
