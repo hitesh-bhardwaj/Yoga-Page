@@ -30,9 +30,21 @@ html {
     font-size: 1.2rem;
   }
 
-  @media  screen and (max-width:767px) {
-    .body{
-      
+  @media (max-width:767px) {
+    body{
+      font-size: 20px;
+    }
+
+    p  {
+      font-size: 15px;
+    }
+
+    h2{
+      font-size: 25px;
+    }
+
+    h3{
+      font-size: 20px;
     }
   }
 
@@ -73,7 +85,7 @@ html {
     display: none;
   }
   
-  @media (max-width:768px) {
+  @media (max-width:767px) {
   .nav-btn {
       display: inline-block;
       position: absolute;
@@ -83,32 +95,33 @@ html {
     }
   
   .nav-btn label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 0;
+    display: inline-block;
+    /* width: 50px; */
+    /* height: 50px; */
+    padding: 10px;
   
       }
   
   .main-nav > .nav-btn label:hover, .main-nav  #nav-check:checked ~ .nav-btn > label {
-          background-color: rgba(0, 0, 0, 0.3);
+          /* background-color: rgba(0, 0, 0, 0.3); */
   }
   
           .main-nav > .nav-btn > label > span {
               display: block;
               width: 25px;
-              height: 7px;
+              height: 8px;
               border-top: 2px solid #eee;
+
             }
             .main-nav > .nav1 ul {
               position: absolute;
               display: block;
               width: 100%;
-              background-color: black;
+              background-color: white;
               height: 0;
               transition: all 0.3s ease-in;
               overflow-y: hidden;
-              top: 50px;
+              top: 10px;
               left: 0;
               z-index: 1;
               padding: 0;
@@ -121,7 +134,7 @@ html {
               padding: 10px 0;
             }
             .main-nav > #nav-check:not(:checked) ~ .nav1 ul {
-              height: 0;
+              height: 50vh;
   
             }
   
@@ -195,9 +208,22 @@ html {
             transition: 0.5s;
           }
 
-          @media (max-width:768px) {
+          @media (max-width:767px) {
             .hero{
-              background-size: contain;
+              background-image: none;
+              background-size: cover;
+              font-size: 20px;
+              width: 100%;
+              height: auto;
+            }
+            .hero-main{
+              width: 100%;
+              padding: 5%;
+              text-align: center;
+            }
+
+            button{
+              margin-top: 2%;
             }
           }
 
@@ -226,6 +252,28 @@ html {
               margin: 1%;
           }
 
+          @media (max-width:767px){
+            .prac-main{
+              margin: 0%;
+              margin-top: 20%;
+              padding: 5%;
+              font-size: 20px;
+            }
+
+            .prac-content1{
+              padding: 0%;
+            }
+
+            .prac-content2{
+              display: block;
+            }
+            .prac-content2 div{
+              margin-top: 5%;
+            }
+          }
+
+
+
           /* About-Section */
           
           .about{
@@ -243,7 +291,7 @@ html {
 
           .about-main2{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: baseline;
           }
           .about-main2 div{
@@ -254,11 +302,23 @@ html {
             color: #114486;
           }
 
-          @media (max-width:768px) {
+          @media (max-width:767px) {
             .about-main{
+              margin-top: 20%;
+              text-align: center;
               display : block;
             }
+
+            .about-main1{
+              
+              margin: 0%;
+            }
+
+            .about-img{
+              width: 50%;
+            }
           }
+
          
           /* Teachers-Section */
 
@@ -287,8 +347,24 @@ html {
             width: 100%;
           }
 
+          @media (max-width:767px) {
+            .teachers-intro{
+              padding: 0;
+            }
+
+            .intro-main{
+              display: block;
+            }
+
+            .intro-main > div > img{
+              width: 50%;
+            }
+            
+          }
+
 
           /* Gallery Section */
+
           .gal{
             margin: 10% 10%;
             text-align: center;
@@ -301,7 +377,7 @@ html {
           }
 
           .gal-img > div > span {
-            padding: .5% 1%;
+            padding: 10px 15px;
 
           }
           
@@ -320,6 +396,25 @@ html {
             object-fit: cover;
             border-radius: 40px;
             
+          }
+
+          @media (max-width:767px) {
+            .gal-img-r1{
+              width: 100%;
+              display: block;
+            }
+
+            .img-s{
+              width: 100%;
+              height: auto;
+            }
+
+            .img-l{
+              height: auto;
+              width: 100%;
+              object-fit: cover;
+              border-radius: 40px;
+            }
           }
 
           
