@@ -218,7 +218,7 @@ html {
             }
             .hero-main{
               width: 100%;
-              padding: 5%;
+              padding: 0%;
               text-align: center;
             }
 
@@ -407,6 +407,7 @@ html {
             .img-s{
               width: 100%;
               height: auto;
+              margin: 0;
             }
 
             .img-l{
@@ -415,13 +416,16 @@ html {
               object-fit: cover;
               border-radius: 40px;
             }
+
+            .gal-img > div > span {
+              padding: 0;
+            }
           }
 
           
           /* Signup-Section */
 
           .signup{
-            
             padding: 10%;
           }
 
@@ -462,6 +466,16 @@ html {
           margin-right: 10px;
         }
 
+        @media (max-width:767px) {
+          .signup-main {
+            width: 100%;
+            padding: 0;
+          }
+
+          input{
+            padding-bottom: 15px;
+          }
+        }
         
           /* Footer Section */
           footer {
@@ -501,15 +515,23 @@ html {
           }
           
 
-          @media (max-width:768px) {
+          @media (max-width:767px) {
+            footer{
+              background-color: #03020a;
+
+            }
+
             .footer-main{
-              display : flex;
+              display : block;
               flex-wrap: wrap;
             }
 
             .footer-main > div{
-              width: 40%;
+              width: 100%;
+              padding-bottom: 5%;
             }
+
+            
           }
 
           .backdrop{
@@ -518,3 +540,11 @@ html {
             bottom: 0;
             z-index: -1;
           }
+
+          @media (max-width:767px) {
+            .backdrop {
+              bottom: 1360px;
+            }
+
+          }
+
