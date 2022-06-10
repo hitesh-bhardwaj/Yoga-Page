@@ -86,11 +86,15 @@ html {
   }
   
   @media (max-width:767px) {
+  header{
+    position: fixed;
+    }
+
   .nav-btn {
       display: inline-block;
       position: absolute;
-      right: 0;
-      top: 4%;
+      right: 5%;
+      top: 5%;
   
     }
   
@@ -98,7 +102,7 @@ html {
     display: inline-block;
     /* width: 50px; */
     /* height: 50px; */
-    padding: 10px;
+    padding: 5px;
   
       }
   
@@ -108,30 +112,30 @@ html {
   
           .main-nav > .nav-btn > label > span {
               display: block;
-              width: 25px;
+              width: 30px;
               height: 8px;
-              border-top: 2px solid #eee;
+              border-top: 2px solid #000;
 
             }
             .main-nav > .nav1 ul {
               position: absolute;
               display: block;
               width: 100%;
-              background-color: white;
-              height: 0;
+              background-color: #fff;
+              height: 0px;
               transition: all 0.3s ease-in;
-              overflow-y: hidden;
-              top: 10px;
-              left: 0;
+              overflow-y: auto;
+              top: 0px;
               z-index: 1;
               padding: 0;
-              margin-top: 5%;
-            }
+              margin-top: 8%;
+             }
+
             .main-nav > .nav1 > ul > li {
               text-align: center;
               display: block;
               width: 100%;
-              padding: 10px 0;
+              padding: 15px 0;
             }
             .main-nav > #nav-check:not(:checked) ~ .nav1 ul {
               height: 50vh;
@@ -151,7 +155,7 @@ html {
             }
   
             .main-nav{
-              margin: 2%;
+              margin: 0%;
             }
 
           }
@@ -210,16 +214,21 @@ html {
 
           @media (max-width:767px) {
             .hero{
+              margin-top: 5%;
               background-image: none;
               background-size: cover;
-              font-size: 20px;
+              font-size: 22px;
               width: 100%;
               height: auto;
             }
             .hero-main{
-              width: 100%;
-              padding: 0%;
+              width: 90%;
+              padding: 30px 5%;
               text-align: center;
+            }
+
+            .h-title{
+              justify-content: center;
             }
 
             button{
@@ -373,6 +382,7 @@ html {
           .gal-img-r1{
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
           }
 
@@ -443,7 +453,7 @@ html {
 
           input{
             padding: 12px;
-            width: 100%;
+            width: 85%;
             margin-bottom: 20px;
             border: none;
             border-bottom: 2px solid #fff;
@@ -505,7 +515,7 @@ html {
             display: flex;
             justify-content: space-between;
             border-top: darkgray;
-            border-width: 2px;
+            border-width: 1px;
             border-style: solid;
           }
 
@@ -529,9 +539,12 @@ html {
             .footer-main > div{
               width: 100%;
               padding-bottom: 5%;
+              padding: 0;
             }
 
-            
+            .footer-bot{
+              margin-top: 20%;
+            }
           }
 
           .backdrop{
@@ -543,7 +556,7 @@ html {
 
           @media (max-width:767px) {
             .backdrop {
-              bottom: 1310px;
+              bottom: 1136px;
             }
 
           }
