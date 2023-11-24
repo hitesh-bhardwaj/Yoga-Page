@@ -107,10 +107,6 @@ html {
     padding: 0;
       }
   
-  .main-nav > .nav-btn label:hover, .main-nav  #nav-check:checked ~ .nav-btn > label {
-          /* background-color: rgba(0, 0, 0, 0.3); */
-  }
-  
           .main-nav > .nav-btn > label > span {
               display: block;
               width: 30px;
